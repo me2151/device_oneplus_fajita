@@ -1,6 +1,7 @@
 #
 # Copyright (C) 2018 The LineageOS Project
 # Copyright (C) 2018 CarbonROM
+# Copyright (C) 2018 InvictrixROM
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -22,13 +23,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from fajita device
 $(call inherit-product, device/oneplus/fajita/device.mk)
 
-# Inherit Carbon GSM telephony parts
-$(call inherit-product, vendor/carbon/config/gsm.mk)
-
 # Inherit Carbon product configuration
-$(call inherit-product, vendor/carbon/config/common.mk)
+$(call inherit-product, vendor/invictrix/config/common_full_phone.mk)
 
-PRODUCT_NAME := carbon_fajita
+PRODUCT_NAME := invictrix_fajita
 PRODUCT_DEVICE := fajita
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
